@@ -9,16 +9,11 @@ import { UsersService } from './services/user/users.service';
 })
 export class AppComponent {
   title = 'Angular application';
-
-  users = []
-
-  constructor(private usersService: UsersService) {
+ 
+  constructor() {
   }
 
   ngOnInit(): void {
-    // this.users = this.usersService.users;    
-    this.usersService.getUsers().subscribe(users => {
-      this.users = users;
-    });
+
   }
 }
