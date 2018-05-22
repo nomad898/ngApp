@@ -1,3 +1,19 @@
 h6 {
     text-align: center;
 }
+
+.card-content {
+    height: 130px;
+}
+
+.marked {
+    font-weight: bold;
+    color: magenta!important;
+}
+
+.hover-it {
+    transform: scale(1.05);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
+    transition: .5s all;
+    z-index: 1000;
+}
